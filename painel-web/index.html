@@ -6,18 +6,22 @@
   <title>Leitor de Materiais Acessíveis — PDF para Markdown inclusivo</title>
   <meta name="description" content="Painel que converte materiais didáticos em PDF, imagens e tabelas para Markdown acessível a pessoas com deficiência visual: tabelas semânticas, descrição de imagens e blocos de código comentados." />
   <!--
-    Discovery:
-      deliverable: painel web (SPA) para conversão de materiais didáticos em Markdown acessível
-      audience: estudante de Sistemas de Informação com deficiência visual + quem prepara os materiais
-      direction: Leitura Otimizada (Information Architects) — content-first, fontes de sistema,
-                 links azuis clássicos, linha de leitura ~66ch, zero decoração, performance
-      sections: header / nav abas (Converter, Histórico, Exemplos) / upload + fila + resultado / rodapé
-      accent: azul clássico de link (#0000EE) sobre papel (#fafafa)
-      constraint: site estático (nginx FC); PDF.js client-side; localStorage como histórico persistente
+    THESIS: A clear, accessible overlay that clarifies complex documents with precision grids.
+    OWN-WORLD: Translucent acrylic panes over an obscured background, light blue pastel edges, high contrast crisp sans-serif typography.
+    STORY: Users with visual impairments or their teachers drag PDFs into a clean, distraction-free drafting desk to extract perfectly structured, accessible Markdown.
+    FIRST VIEWPORT: A massive, drag-and-drop translucent glass zone spanning the grid with literal bold quoted tags labeling actions, scaling beautifully across themes.
+    FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance.
   -->
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-<body>
+<body class="theme-adaptive">
+  <!-- 
+    THESIS: A clear, accessible overlay that clarifies complex documents with precision grids.
+    OWN-WORLD: Translucent acrylic pane over an obscured background, light blue pastel edges, high contrast crisp sans-serif typography.
+    STORY: Users with visual impairments or their teachers drag PDFs into a clean, distraction-free drafting desk to extract perfectly structured, accessible Markdown.
+    FIRST VIEWPORT: A massive, drag-and-drop translucent glass zone spanning the grid with literal bold quoted tags labeling actions, scaling beautifully across themes.
+    FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance.
+  -->
   <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
 
   <header class="topo" data-od-id="header">
@@ -59,13 +63,13 @@
               <path d="M12 16V4m0 0L7 9m5-5l5 5" />
               <path d="M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3" />
             </svg>
-            <p class="upload-titulo">Arraste os arquivos para cá ou clique para selecionar</p>
+            <p class="upload-titulo">"ARRASTE OS ARQUIVOS AQUI"</p>
             <p class="upload-dica" id="uploadDica">Formatos aceitos: <strong>.pdf</strong>, <strong>.png</strong>, <strong>.jpg</strong>, <strong>.jpeg</strong>, <strong>.csv</strong> — vários arquivos de uma vez.</p>
             <p class="upload-erro" id="uploadErro" role="alert"></p>
           </div>
           <input type="file" id="inputArquivos" accept=".pdf,.png,.jpg,.jpeg,.csv" multiple hidden />
           <div class="upload-acoes">
-            <button type="button" class="btn" id="btnSelecionar">Selecionar arquivos</button>
+            <button type="button" class="btn" id="btnSelecionar">"SELECIONAR ARQUIVOS"</button>
             <button type="button" class="btn btn-link" id="btnProcessar" disabled>Iniciar conversão da fila</button>
             <button type="button" class="btn btn-link" id="btnLimparFila" disabled>Limpar fila</button>
           </div>

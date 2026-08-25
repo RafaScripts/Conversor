@@ -1,0 +1,114 @@
+{
+  "title": "Choose the visual world",
+  "question": "The roll assigned Translucent Drafting Board. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Translucent Drafting Board",
+      "kicker": "THE ROLL",
+      "lineage": "Architectural drafting and cyanotypes",
+      "thesis": "A clear, accessible overlay that clarifies complex documents with precision grids.",
+      "palette": [
+        "#f0f4f8",
+        "#0f172a",
+        "#3b82f6",
+        "#e2e8f0"
+      ],
+      "materials": [
+        "translucent acrylic",
+        "crisp sans-serif"
+      ],
+      "viewport": "A clean pane over an obscured background, putting focus strictly on the task.",
+      "risk": "Can feel too clinical if spacing is tight.",
+      "raised": [
+        {
+          "from": "challenger-streetwear",
+          "raise": "Bold, literal quoted labeling for maximum clarity without ambiguity."
+        },
+        {
+          "from": "challenger-cloud",
+          "raise": "Soft, elegant light-blue pastel edges to warm the clinical tone."
+        }
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "The Optometrist Exam",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Clinical precision and high contrast",
+      "thesis": "Stark contrast and bold typography for absolute legibility.",
+      "palette": [
+        "#ffffff",
+        "#000000",
+        "#2563eb"
+      ],
+      "materials": [
+        "high-contrast ink",
+        "geometric sans"
+      ],
+      "viewport": "Massive typography for key actions scaling down to reading sizes.",
+      "risk": "Fails the 'friendly' prompt by leaning heavily into extreme utility."
+    },
+    {
+      "id": "challenger-streetwear",
+      "label": "Industrial Streetwear",
+      "verdict": "declined",
+      "lineage": "industrial apparel tags",
+      "palette": [
+        "#ffffff",
+        "#000000",
+        "#ff6600"
+      ],
+      "materials": [
+        "white cotton",
+        "hazard stripes"
+      ],
+      "case": "Loses on audience identification (too edgy) but has strong literal clarity.",
+      "kept": "Literal quoted labels for elements."
+    },
+    {
+      "id": "challenger-cloud",
+      "label": "Cloud Edge Diffraction",
+      "verdict": "declined",
+      "lineage": "atmospheric pastel bands",
+      "palette": [
+        "#ffffff",
+        "#e0f2fe",
+        "#bae6fd"
+      ],
+      "materials": [
+        "soft shadows",
+        "pastel borders"
+      ],
+      "case": "Loses on clarity (too soft and low-contrast) but has elegant appeal.",
+      "kept": "Soft pastel borders and warm tones."
+    }
+  ],
+  "reroll": {
+    "registers": [
+      "safer",
+      "bolder"
+    ]
+  },
+  "buildPath": {
+    "value": "code",
+    "toggle": false
+  },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "What this category ships, executed impeccably.",
+    "palette": [
+      "#ffffff",
+      "#111827",
+      "#2563eb"
+    ],
+    "materials": [
+      "clean grid",
+      "standard shadows"
+    ],
+    "viewport": "The arrangement a visitor expects, at full craft.",
+    "risk": "Indistinguishable from the competition by design."
+  },
+  "steer": true
+}
